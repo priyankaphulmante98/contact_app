@@ -1,0 +1,246 @@
+.form {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+  margin: auto;
+  align-items: center;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background-color: whitesmoke;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.form input[type="url"],
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.form input[type="submit"] {
+  background-color: rgb(53, 53, 53);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 150px;
+  font-size: 20px;
+  margin-left: 30%;
+  margin-top: 30px;
+}
+
+#form_update_btn {
+  background: green;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 150px;
+  font-size: 20px;
+  margin-left: 30%;
+  margin-top: 30px;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 20px;
+  column-gap: 0px;
+  padding: 20px;
+  margin: auto;
+}
+#container #dash-box1 {
+  height: auto;
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 40px;
+  border-radius: 20px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgb(131, 211, 109);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#container #dash-box2 {
+  height: auto;
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 40px;
+  border-radius: 20px;
+  color: rgb(23, 14, 14);
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#container #dash-box3 {
+  height: auto;
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 40px;
+  border-radius: 20px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgb(200, 61, 61);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#container #dash-box4 {
+  height: auto;
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 40px;
+  border-radius: 20px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgb(222, 169, 82);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#container #box {
+  height: auto;
+  background-color: white;
+  width: 278px;
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 40px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#box > p {
+  height: 75px;
+  overflow: hidden;
+}
+
+#btndiv {
+  margin-top: 20px;
+  width: 80px;
+}
+
+.delete_btn {
+  padding: 8px;
+  width: max-content;
+  color: white;
+  background-color: rgb(203, 81, 81);
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.create_btn {
+  height: 300px;
+  width: 70%;
+  margin: auto;
+  /* border:2px solid red; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.update_btn {
+  padding: 8px;
+  width: fit-content;
+  color: white;
+  background-color: rgb(103, 216, 103);
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(169, 155, 155);
+}
+.no-data-message i {
+  margin-top: 5px;
+  border: red;
+}
+#no-data-message {
+  width: 450px;
+  display: flex;
+  height: 150px;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  font-size: 22px;
+  margin: auto;
+  padding: 20px;
+  margin-left: 450px;
+  border: 2px solid black;
+}
+
+/* media query starts here */
+
+@media only screen and (max-width: 1100px) {
+  #container {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #container {
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 20px;
+  }
+  .form {
+    width: 350px;
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  #container #box {
+    width: 330px;
+  }
+}
+
+.css-10isthl {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 0px;
+  -webkit-padding-start: var(--chakra-space-4);
+  padding-inline-start: var(--chakra-space-4);
+  -webkit-padding-end: var(--chakra-space-4);
+  padding-inline-end: var(--chakra-space-4);
+  height: var(--chakra-sizes-20);
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #45adc6;
+  border-bottom-width: 1px;
+  border-bottom-color: #2677e2;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
