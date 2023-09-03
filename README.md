@@ -1,4 +1,4 @@
-# Skill-Up
+# Contact Managment App
 
 > Contact app is basic create contact app we can edit contact and delete a contact. corona death cases, recover data showing throgh a graph in this project. 
 
