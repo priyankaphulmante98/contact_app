@@ -4,8 +4,8 @@ import ReactApexChart from "react-apexcharts";
 
 const UpperGraph = () => {
   const [historicalData, setHistoricalData] = useState(null);
-  const [deathData, setdateData] = useState(null);
-  const [recoverdData, setrecoveredData] = useState(null);
+  const [deathData, setdeathData] = useState(null);
+  // const [recoverdData, setrecoveredData] = useState(null);
 
   useEffect(() => {
     axios
@@ -26,16 +26,20 @@ const UpperGraph = () => {
         ];
         const deathData = [
           {
-            name: "Cases",
+            name: "Deaths",
             data: deathsData,
           },
-        ];
-        const recoverdData = [
           {
             name: "Recovered",
             data: recoveredData,
           },
         ];
+        // const recoverdData = [
+        //   {
+        //     name: "Recovered",
+        //     data: recoveredData,
+        //   },
+        // ];
 
         setHistoricalData({
           options: {
@@ -94,12 +98,12 @@ const UpperGraph = () => {
           series: chartData,
         });
 
-        setdateData({
+        setdeathData({
           options: {
             chart: {
               type: "line",
               height: 450,
-              width: 500,
+              width: 400,
               stacked: false,
               zoom: {
                 type: "x",
@@ -150,64 +154,6 @@ const UpperGraph = () => {
           },
           series: deathData,
         });
-
-        setrecoveredData({
-          options: {
-            chart: {
-              type: "line",
-              height: 450,
-              width: 500,
-              stacked: false,
-              zoom: {
-                type: "x",
-                autoScaleYaxis: true,
-              },
-              toolbar: {
-                show: false,
-              },
-            },
-            stroke: {
-              show: true,
-              width: 2,
-              curve: "smooth",
-            },
-            dataLabels: {
-              enabled: false,
-            },
-            markers: {
-              size: 0,
-            },
-            xaxis: {
-              categories: categories,
-              type: "datetime",
-            },
-            yaxis: {
-              title: {
-                text: "Count",
-              },
-              min: 0,
-              tickAmount: 10,
-              labels: {
-                formatter: function (val) {
-                  return (val / 1000000).toFixed(1) + "M";
-                },
-              },
-            },
-
-            tooltip: {
-              x: {
-                format: "dd/MM/yy",
-              },
-
-              y: {
-                formatter: function (val) {
-                  return val.toString();
-                },
-              },
-            },
-          },
-          series: recoverdData,
-        });
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
@@ -215,17 +161,14 @@ const UpperGraph = () => {
   }, []);
 
   return (
-    <div
+    <span
       style={{
         display: "flex",
         justifyContent: "space-around",
-        margin: "10px",
       }}
     >
-      <div
+      <span
         style={{
-          width: "450px",
-          pdding: "10px",
           boxShadow:
             "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
         }}
@@ -241,17 +184,17 @@ const UpperGraph = () => {
             width={450}
           />
         )}
-      </div>
+      </span>
 
-      <div
+      <span
         style={{
-          width: "450px",
-          pdding: "10px",
           boxShadow:
             "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
         }}
       >
-        <h2 style={{ marginLeft: "10px" }}>COVID-19 Historical Deaths Data</h2>
+        <h2 style={{ marginLeft: "10px" }}>
+          COVID-19 Historical Deaths And Recoverd Data
+        </h2>
         {deathData && (
           <ReactApexChart
             options={deathData.options}
@@ -261,12 +204,10 @@ const UpperGraph = () => {
             width={450}
           />
         )}
-      </div>
+      </span>
 
-      <div
+      {/* <span
         style={{
-          width: "450px",
-          pdding: "10px",
           boxShadow:
             "rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px",
         }}
@@ -283,8 +224,8 @@ const UpperGraph = () => {
             width={450}
           />
         )}
-      </div>
-    </div>
+      </span> */}
+    </span>
   );
 };
 
