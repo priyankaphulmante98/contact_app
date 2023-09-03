@@ -24,7 +24,7 @@
 
 ## Screenshots
 
-![image](https://github.com/priyankaphulmante98/contact_app/assets/103947245/42e4fbfb-0578-4c49-ba8f-0fd458d7b25d)
+![image](https://github.com/priyankaphulmante98/contact_app/assets/103947245/49ffdb93-cae8-4670-b2b1-93c36473de1c)
 
 
 ## Run Locally
