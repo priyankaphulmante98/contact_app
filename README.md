@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Skill-Up
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Contact app is basic create contact app we can edit contact and delete a contact. corona death cases, recover data showing throgh a graph in this project. 
 
-## Available Scripts
+## Built With
 
-In the project directory, you can run:
+- React.js
+- Redux
+- Html 
+- Css
+- Javascript
+- Redux-Thunk
+- react leaflet 
+- React Router v6
+- CRUD
+- Vercel
+- Chakra UI
+- Render
+- Vercel
 
-### `npm start`
+## Live Demo 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[Vercel link available here](https://contact-app-priyankaphulmante98.vercel.app/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Screenshots
 
-### `npm test`
+![image](https://github.com/priyankaphulmante98/contact_app/assets/103947245/42e4fbfb-0578-4c49-ba8f-0fd458d7b25d)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Run Locally
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Clone the project
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+ https://github.com/priyankaphulmante98/contact_app.git
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Go to the project directory
 
-### `npm run eject`
+```bash
+  cd contact_app
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Install dependencies
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+  npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Start the server
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+  npm run start
+```
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Prerequisites
+React.js ,Chakra UI  , Redux-Thunk , Api , Render. Redux,  Html , Css, Javascript, Redux-Thunk, react leaflet, React Router v6
 
-### Code Splitting
+### Setup
+VS code , GitHub, Git, Render, Postman, Render
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Prview 
 
-### Analyzing the Bundle Size
+![image](https://github.com/priyankaphulmante98/contact_app/assets/103947245/1a00614e-021d-435b-a085-94f1e4c89fea)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+![image](https://github.com/priyankaphulmante98/contact_app/assets/103947245/fc4a2c9b-1643-4c27-bed1-e774e2975e72)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![image](https://github.com/priyankaphulmante98/contact_app/assets/103947245/b7af42e3-61dd-4a7b-b3be-b5cfc716e471)
 
-### Advanced Configuration
+![image](https://github.com/priyankaphulmante98/contact_app/assets/103947245/df7f29f0-d540-4bac-a045-f542a993bbd9)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+## Authors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+👤 **Priyanka Phulmante**
 
-### `npm run build` fails to minify
+- GitHub: [@priyankaphulmante98](https://github.com/priyankaphulmante98)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
